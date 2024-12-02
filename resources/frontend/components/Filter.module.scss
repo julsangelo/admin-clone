@@ -1,0 +1,97 @@
+@import "../assets/scss/main.module";
+
+.filter {
+    position: absolute;
+    top: 65px;
+    background: #ffffff;
+    padding: 25px 20px;
+    border: 1px solid $c_gray;
+    border-radius: 5px;
+    max-width: 365px;
+    display: flex;
+    flex-flow: column;
+    row-gap: 30px;
+}
+
+.filterContainer {
+    font-size: 16px;
+    font-weight: bold;
+    color: $c_dark;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: baseline;
+}
+
+.filterInput {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 100%;
+}
+
+.filterDateTotal {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    color: $c_mediumgray;
+    font-weight: normal;
+}
+
+.filterOptionLabel {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.filterOptionCheckbox {
+    height: 20px;
+    width: 20px;
+    scale: 1;
+    border-color: $c_mediumgray;
+}
+
+.filterPrice {
+    font-size: 16px;
+    font-weight: bold;
+    color: $c_dark;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.filterInputLabel {
+    font-size: 13px !important;
+}
+
+.filterInputContainer {
+    padding: 10px 15px !important;
+}
+
+.filterDropdown {
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+    border: #d7d7d7;
+    border-radius: 5px;
+    outline: 1px solid #d7d7d7;
+    border-right: 12px solid transparent;
+}
+
+.filterButtonContainer {
+    display: flex;
+    column-gap: 10px;
+    justify-content: end;
+}
+
+.filterClearButton {
+    border: 2px solid $c_primary;
+    color: $c_primary;
+    background-color: $c_secondary;
+    padding: 10px 18px;
+}
+
+.filterApplyButton {
+    padding: 10px 18px;
+}

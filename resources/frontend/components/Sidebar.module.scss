@@ -1,0 +1,17 @@
+@import "../assets/scss/main.module";
+
+.sideBar {
+    background-color: $b_darker;
+    height: 100dvh;
+    width: 230px;
+
+    .barLinkContainer {
+        margin-top: 10px;
+
+        .otherMenu {
+            color: $c_mediumgray;
+            font-size: 14px;
+            margin: 15px 0 10px 10px;
+        }
+    }
+}

@@ -1,0 +1,67 @@
+@import "../assets/scss/main.module.scss";
+
+.uploadImage {
+    display: block;
+    cursor: pointer;
+}
+
+.uploadImageContainer {
+    height: 280px;
+    width: 280px;
+    border: 2px dashed $c_gray;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 33px;
+}
+
+.uploadImageIcon {
+    color: $c_gray;
+}
+
+.uploadImageLabel {
+    font-size: 16px;
+    font-weight: 600;
+    color: $c_primary;
+    text-align: center;
+    cursor: pointer;
+}
+
+.uploadImageError {
+    color: #d62828;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.uploadImageContent {
+    overflow: hidden;
+}
+
+.uploadedImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.uploadImageChange {
+    position: fixed;
+    width: 280px;
+    height: 280px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.uploadImageContainer:hover .uploadImageChange {
+    opacity: 1;
+}
